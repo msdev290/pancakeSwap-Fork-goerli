@@ -73,4 +73,5 @@ export const PUBLIC_NODES = {
     'https://linea-testnet.rpc.thirdweb.com',
     'https://consensys-zkevm-goerli-prealpha.infura.io/v3/93e8a17747e34ec0ac9a554c1b403965',
   ],
+  [ChainId.BASE_TESTNET]: ['https://goerli.base.org'],
 } satisfies Record<ChainId, readonly string[]>

@@ -21,12 +21,13 @@ export function getNetwork(): GetNetworkResult {
     nodeUrls: { default: '' },
   }
 
+
   return {
     chain: networkName
       ? {
-          ...activeChain,
-          unsupported: client.connector?.isChainUnsupported(networkName),
-        }
+        ...activeChain,
+        unsupported: client.connector?.isChainUnsupported(networkName),
+      }
       : undefined,
     chains: activeChains,
   } as const
